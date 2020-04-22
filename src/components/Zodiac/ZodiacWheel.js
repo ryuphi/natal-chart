@@ -4,7 +4,7 @@ import ZodiacArc from "./ZodiacArc"
 const ZodiacWheel = ({size}) => {
   const radius = (size / 2) - 10
 
-  return(
+  return (
     <svg width={size} height={size}>
       <g id='arcs-group' style={{
         transform: "translate(50%, 50%)"

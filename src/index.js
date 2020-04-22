@@ -1,5 +1,5 @@
 import React from "react";
-import { render } from "react-dom";
+import {render} from "react-dom";
 import ZodiacWheel from "./components/Zodiac/ZodiacWheel";
 
 const App = () => (
@@ -8,8 +8,8 @@ const App = () => (
     justifyContent: 'center',
     alignItems: 'center'
   }}>
-    <ZodiacWheel size={700} />
+    <ZodiacWheel size={700}/>
   </div>
 );
 
-render(<App />, document.getElementById("root"));
+render(<App/>, document.getElementById("root"));

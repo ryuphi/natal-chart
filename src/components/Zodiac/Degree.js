@@ -12,8 +12,8 @@ const Degree = ({angle, radius}) => {
 
     const lineStartPoint = (angleInDegree) => {
       return {
-        x: radius * .8 * Math.cos((Math.PI) - (((angleInDegree - 1) * Math.PI) / 180)),
-        y: radius * .8 * Math.sin((Math.PI) - (((angleInDegree - 1) *  Math.PI) / 180)),
+        x: radius * .8 * Math.cos(2 * Math.PI - (angleInDegree * 2 * Math.PI / 360)),
+        y: radius * .8 * Math.sin(2 * Math.PI - (angleInDegree * 2 * Math.PI / 360)),
       }
     }
 
@@ -29,9 +29,9 @@ const Degree = ({angle, radius}) => {
         default:
           large = radius * .81
       }
-      return  {
-        x: large * Math.cos((Math.PI) - (((angleInDegree - 1) * Math.PI) / 180)),
-        y: large * Math.sin((Math.PI) - (((angleInDegree - 1) * Math.PI) / 180)),
+      return {
+        x: large * Math.cos(2 * Math.PI - (angleInDegree * 2 * Math.PI / 360)),
+        y: large * Math.sin(2 * Math.PI - (angleInDegree * 2 * Math.PI / 360)),
       }
     }
 
