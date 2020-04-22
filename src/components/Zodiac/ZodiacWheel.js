@@ -3,24 +3,18 @@ import ZodiacArc from "./ZodiacArc"
 
 const ZodiacWheel = ({size}) => {
   const radius = (size / 2) - 10
+  const ascendant = (273 - 273%30)/30%11;
+
+  const signs = [...Array(12).keys()].map(
+    value => <ZodiacArc sign={(ascendant+value)%12} radius={radius} start={30 * value} end={30 * (value + 1)} correction={3}/>
+  )
 
   return (
     <svg width={size} height={size}>
       <g id='arcs-group' style={{
         transform: "translate(50%, 50%)"
       }}>
-        <ZodiacArc radius={radius} start={0} end={30}/>
-        <ZodiacArc radius={radius} start={30} end={60}/>
-        <ZodiacArc radius={radius} start={60} end={90}/>
-        <ZodiacArc radius={radius} start={90} end={120}/>
-        <ZodiacArc radius={radius} start={120} end={150}/>
-        <ZodiacArc radius={radius} start={150} end={180}/>
-        <ZodiacArc radius={radius} start={180} end={210}/>
-        <ZodiacArc radius={radius} start={210} end={240}/>
-        <ZodiacArc radius={radius} start={240} end={270}/>
-        <ZodiacArc radius={radius} start={270} end={300}/>
-        <ZodiacArc radius={radius} start={300} end={330}/>
-        <ZodiacArc radius={radius} start={330} end={360}/>
+        {signs}
       </g>
     </svg>
   )

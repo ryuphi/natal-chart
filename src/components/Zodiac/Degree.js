@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 
-const Degree = ({angle, radius}) => {
+const Degree = ({angle, radius, correction = 0}) => {
   const [startPoint, setStartPoint] = useState({x: 0, y: 0})
   const [endPoint, setEndPoint] = useState({x: 0, y: 0})
   const [stroke, setStroke] = useState('rgba(0,0,0, .3)')
@@ -12,8 +12,8 @@ const Degree = ({angle, radius}) => {
 
     const lineStartPoint = (angleInDegree) => {
       return {
-        x: radius * .8 * Math.cos(2 * Math.PI - (angleInDegree * 2 * Math.PI / 360)),
-        y: radius * .8 * Math.sin(2 * Math.PI - (angleInDegree * 2 * Math.PI / 360)),
+        x: radius * .8 * Math.cos(2 * Math.PI - ((angleInDegree - correction) * 2 * Math.PI / 360)),
+        y: radius * .8 * Math.sin(2 * Math.PI - ((angleInDegree - correction) * 2 * Math.PI / 360)),
       }
     }
 
@@ -30,8 +30,8 @@ const Degree = ({angle, radius}) => {
           large = radius * .81
       }
       return {
-        x: large * Math.cos(2 * Math.PI - (angleInDegree * 2 * Math.PI / 360)),
-        y: large * Math.sin(2 * Math.PI - (angleInDegree * 2 * Math.PI / 360)),
+        x: large * Math.cos(2 * Math.PI - ((angleInDegree - correction) * 2 * Math.PI / 360)),
+        y: large * Math.sin(2 * Math.PI - ((angleInDegree - correction) * 2 * Math.PI / 360)),
       }
     }
 
