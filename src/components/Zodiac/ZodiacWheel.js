@@ -28,7 +28,8 @@ const ZodiacWheel = ({size}) => {
             <Axis radius={radius} startAngle={180} endAngle={0} startLegend={'ASC'} endLegend={'DC'} />
             <Axis radius={radius} startAngle={mc} endAngle={ic} startLegend={'MC'} endLegend={'IC'} />
           </g>
-          <circle fill={'none'} stroke={'black'} strokeWidth={.3} r={radius*.3}/>
+          <circle fill={'none'} strokeWidth={.5} stroke={'rgba(0,0,0,.5)'} r={radius*.3}/>
+          <circle fill={'none'} strokeWidth={.5} stroke={'rgba(0,0,0,.5)'} r={radius*.25}/>
         </g>
       </svg>
     </div>

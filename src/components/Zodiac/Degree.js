@@ -7,7 +7,18 @@ const Degree = ({angle, radius, correction = 0}) => {
 
   useEffect(() => {
     const calculateStroke = (angleInDegree) => {
-      return angleInDegree % 5 ? 'rgba(0, 0, 0, .3)' : 'rgba(0, 0, 0, .5)'
+      let color;
+      switch (angleInDegree % 10) {
+        case 0:
+          color =  'rgba(0, 0, 0, .7)'
+          break
+        case 5:
+          color =  'rgba(0, 0, 0, .5)'
+          break;
+        default:
+          color =  'rgba(0, 0, 0, .3)'
+      }
+      return color
     }
 
     const lineStartPoint = (angleInDegree) => {
@@ -21,13 +32,13 @@ const Degree = ({angle, radius, correction = 0}) => {
       let large;
       switch (angleInDegree % 10) {
         case 0:
-          large = radius * .86
+          large = radius * .87
           break
         case 5:
-          large = radius * .83
+          large = radius * .85
           break;
         default:
-          large = radius * .81
+          large = radius * .83
       }
       return {
         x: large * Math.cos(2 * Math.PI - ((angleInDegree - correction) * 2 * Math.PI / 360)),

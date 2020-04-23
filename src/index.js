@@ -9,7 +9,7 @@ const App = () => (
     justifyContent: 'center',
     alignItems: 'center'
   }}>
-    <ZodiacWheel size={700}/>
+    <ZodiacWheel size={800}/>
   </div>
 );
 
