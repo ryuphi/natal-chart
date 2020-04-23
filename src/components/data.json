@@ -1,0 +1,298 @@
+{
+  "data": {
+    "astros": {
+      "sun": {
+        "name": "sun",
+        "position": {
+          "longitude": 104.2827788794203,
+          "degrees": 14,
+          "minutes": 16,
+          "seconds": 58
+        },
+        "sign": 4
+      },
+      "moon": {
+        "name": "moon",
+        "position": {
+          "longitude": 36.31502041555728,
+          "degrees": 6,
+          "minutes": 18,
+          "seconds": 54
+        },
+        "sign": 2
+      },
+      "mercury": {
+        "name": "mercury",
+        "position": {
+          "longitude": 124.47329391896098,
+          "degrees": 4,
+          "minutes": 28,
+          "seconds": 24
+        },
+        "sign": 5
+      },
+      "venus": {
+        "name": "venus",
+        "position": {
+          "longitude": 147.13302246912704,
+          "degrees": 27,
+          "minutes": 7,
+          "seconds": 59
+        },
+        "sign": 5
+      },
+      "mars": {
+        "name": "mars",
+        "position": {
+          "longitude": 144.7027809522848,
+          "degrees": 24,
+          "minutes": 42,
+          "seconds": 10
+        },
+        "sign": 5
+      },
+      "jupiter": {
+        "name": "jupiter",
+        "position": {
+          "longitude": 135.53885057604148,
+          "degrees": 15,
+          "minutes": 32,
+          "seconds": 20
+        },
+        "sign": 5
+      },
+      "saturn": {
+        "name": "saturn",
+        "position": {
+          "longitude": 304.9549068305785,
+          "degrees": 4,
+          "minutes": 57,
+          "seconds": 18
+        },
+        "sign": 11
+      },
+      "uranus": {
+        "name": "uranus",
+        "position": {
+          "longitude": 281.72475419996846,
+          "degrees": 11,
+          "minutes": 43,
+          "seconds": 29
+        },
+        "sign": 10
+      },
+      "neptune": {
+        "name": "neptune",
+        "position": {
+          "longitude": 285.41145936847283,
+          "degrees": 15,
+          "minutes": 24,
+          "seconds": 41
+        },
+        "sign": 10
+      },
+      "pluto": {
+        "name": "pluto",
+        "position": {
+          "longitude": 227.69716369822638,
+          "degrees": 17,
+          "minutes": 41,
+          "seconds": 50
+        },
+        "sign": 8
+      },
+      "chiron": {
+        "name": "chiron",
+        "position": {
+          "longitude": 118.3002386391779,
+          "degrees": 28,
+          "minutes": 18,
+          "seconds": 1
+        },
+        "sign": 4
+      },
+      "lilith": {
+        "name": "lilith",
+        "position": {
+          "longitude": 277.9808581321059,
+          "degrees": 7,
+          "minutes": 58,
+          "seconds": 51
+        },
+        "sign": 10
+      },
+      "ceres": {
+        "name": "ceres",
+        "position": {
+          "longitude": 203.6229255436799,
+          "degrees": 23,
+          "minutes": 37,
+          "seconds": 23
+        },
+        "sign": 7
+      },
+      "vesta": {
+        "name": "vesta",
+        "position": {
+          "longitude": 105.79596703030735,
+          "degrees": 15,
+          "minutes": 47,
+          "seconds": 45
+        },
+        "sign": 4
+      },
+      "pallas": {
+        "name": "pallas",
+        "position": {
+          "longitude": 172.00652305711486,
+          "degrees": 22,
+          "minutes": 0,
+          "seconds": 23
+        },
+        "sign": 6
+      },
+      "juno": {
+        "name": "juno",
+        "position": {
+          "longitude": 296.2677923107706,
+          "degrees": 26,
+          "minutes": 16,
+          "seconds": 4
+        },
+        "sign": 10
+      }
+    },
+    "axes": {
+      "asc": {
+        "position": {
+          "degrees": 2,
+          "minutes": 32,
+          "seconds": 30
+        },
+        "sign": 10
+      },
+      "dc": {
+        "position": {
+          "degrees": 2,
+          "minutes": 32,
+          "seconds": 30
+        },
+        "sign": 4
+      },
+      "mc": {
+        "position": {
+          "degrees": 14,
+          "minutes": 58,
+          "seconds": 47
+        },
+        "sign": 6
+      },
+      "ic": {
+        "position": {
+          "degrees": 14,
+          "minutes": 58,
+          "seconds": 47
+        },
+        "sign": 12
+      }
+    },
+    "houses": [
+      {
+        "position": {
+          "degrees": 2,
+          "minutes": 32,
+          "seconds": 30
+        },
+        "sign": 10
+      },
+      {
+        "position": {
+          "degrees": 24,
+          "minutes": 11,
+          "seconds": 43
+        },
+        "sign": 10
+      },
+      {
+        "position": {
+          "degrees": 17,
+          "minutes": 16,
+          "seconds": 24
+        },
+        "sign": 11
+      },
+      {
+        "position": {
+          "degrees": 14,
+          "minutes": 58,
+          "seconds": 47
+        },
+        "sign": 12
+      },
+      {
+        "position": {
+          "degrees": 19,
+          "minutes": 20,
+          "seconds": 11
+        },
+        "sign": 1
+      },
+      {
+        "position": {
+          "degrees": 27,
+          "minutes": 30,
+          "seconds": 14
+        },
+        "sign": 2
+      },
+      {
+        "position": {
+          "degrees": 2,
+          "minutes": 32,
+          "seconds": 30
+        },
+        "sign": 4
+      },
+      {
+        "position": {
+          "degrees": 24,
+          "minutes": 11,
+          "seconds": 43
+        },
+        "sign": 4
+      },
+      {
+        "position": {
+          "degrees": 17,
+          "minutes": 16,
+          "seconds": 24
+        },
+        "sign": 5
+      },
+      {
+        "position": {
+          "degrees": 14,
+          "minutes": 58,
+          "seconds": 47
+        },
+        "sign": 6
+      },
+      {
+        "position": {
+          "degrees": 19,
+          "minutes": 20,
+          "seconds": 11
+        },
+        "sign": 7
+      },
+      {
+        "position": {
+          "degrees": 27,
+          "minutes": 30,
+          "seconds": 14
+        },
+        "sign": 8
+      }
+    ]
+  }
+}

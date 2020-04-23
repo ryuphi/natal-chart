@@ -1,6 +1,6 @@
 import React from "react";
 
-const Axis = ({radius, startAngle, endAngle, startLegend = '', endLegend = '', withArrow = false}) => {
+const Axis = ({radius, startAngle, endAngle, startLegend = '', endLegend = '', bolder = false ,withArrow = false}) => {
   const pointInCircle = (angleInDegree, r) => {
     return {
       x: r * Math.cos(2 * Math.PI - angleInDegree * 2 * Math.PI / 360),
@@ -8,7 +8,7 @@ const Axis = ({radius, startAngle, endAngle, startLegend = '', endLegend = '', w
     }
   }
 
-  const color = 'rgba(0,0,0,.7)'
+  const color = bolder ? 'rgba(0,0,0,.7)' : 'rgba(0,0,0,.08)'
   const ascStart = pointInCircle(startAngle, radius * .25)
   const ascEnd = pointInCircle(startAngle, radius * .8 - (withArrow ? 10 : 0))
 
@@ -32,23 +32,23 @@ const Axis = ({radius, startAngle, endAngle, startLegend = '', endLegend = '', w
       </defs>
       <line
         stroke={color}
-        strokeWidth={3}
+        strokeWidth={bolder ? 3 : 2}
         x1={ascStart.x}
         y1={ascStart.y}
         x2={ascEnd.x}
         y2={ascEnd.y}
         markerEnd={withArrow ? 'url(#arrow)' : ''}
       />
-      <text x={ascStart.x -20} y={ascStart.y - 5} fontSize={'10px'} fontFamily={'sans-serif'} fill={'red'}>{startLegend}</text>
+      {/*<text x={ascStart.x -20} y={ascStart.y - 5} fontSize={'10px'} fontFamily={'sans-serif'} fill={'red'}>{startLegend}</text>*/}
       <line
         stroke={color}
-        strokeWidth={3}
+        strokeWidth={bolder ? 3 : 2}
         x1={descStart.x}
         y1={descStart.y}
         x2={descEnd.x}
         y2={descEnd.y}
       />
-      <text x={descStart.x} y={descStart.y + 15} fontSize={'10px'} fontFamily={'sans-serif'} fill={'red'}>{endLegend}</text>
+      {/*<text x={descStart.x} y={descStart.y + 15} fontSize={'10px'} fontFamily={'sans-serif'} fill={'red'}>{endLegend}</text>*/}
     </g>
   )
 }
