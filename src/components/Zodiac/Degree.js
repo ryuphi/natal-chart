@@ -30,15 +30,19 @@ const Degree = ({angle, radius, correction = 0}) => {
 
     const lineEndPoint = (angleInDegree) => {
       let large;
-      switch (angleInDegree % 10) {
-        case 0:
+
+      switch (Math.abs(angleInDegree % 10)) {
+        case 0: {
           large = radius * .87
           break
-        case 5:
+        }
+        case 5: {
           large = radius * .85
           break;
-        default:
+        }
+        default: {
           large = radius * .83
+        }
       }
       return {
         x: large * Math.cos(2 * Math.PI - ((angleInDegree - correction) * 2 * Math.PI / 360)),
@@ -49,7 +53,7 @@ const Degree = ({angle, radius, correction = 0}) => {
     setEndPoint(lineEndPoint(angle))
     setStartPoint(lineStartPoint(angle))
     setStroke(calculateStroke(angle))
-  }, [angle, radius])
+  }, [angle, radius, correction])
 
   return <line strokeWidth={1} stroke={stroke} x1={startPoint.x} y1={startPoint.y} x2={endPoint.x} y2={endPoint.y}/>
 }

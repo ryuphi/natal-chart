@@ -1,32 +1,23 @@
 import React from 'react'
-import * as d3 from 'd3';
 import Degree from "./Degree";
+import SignIcon from "./SignIcon";
+import Arc from "../Arc";
 
-const ZodiacArc = ({sign = 0, radius, start, end, correction = 0}) => {
-
-  const arc = d3.arc();
-
-  const d = arc({
-    innerRadius: radius * .8,
-    outerRadius: radius,
-    startAngle: 2 * Math.PI - 2 * Math.PI * (start - correction)/ 360,
-    endAngle: 2 * Math.PI - 2 * Math.PI * (end - correction) / 360,
-  })
-
-  const degrees = [...Array(30).keys()].map(value =>
-    <Degree key={value} angle={start - value} radius={radius} correction={correction}/>
+const ZodiacArc = ({sign, innerRadius, outerRadius, start, end, correction = 0}) => {
+  const degrees = [...Array(end - start).keys()].map(value =>
+    <Degree key={start + value} angle={start + value - correction + correction % 30} radius={outerRadius} correction={correction}/>
   )
 
   return (
     <g>
-      <path stroke={'rgba(0, 0, 0, .06)'} fill={'rgba(0, 0, 0, .05)'} strokeWidth={1} d={d}/>
-      {degrees}
-      <image
-        width={30}
-        x={-15 + Math.cos(2 * Math.PI - Math.PI * (start + 15 - correction + 180) / 180) * radius * 0.92}
-        y={-15 + Math.sin(2 * Math.PI - Math.PI * (start + 15 - correction + 180) / 180) * radius * 0.92}
-        xlinkHref={`/astrology-icons/signs/${(sign + 1).toString().padStart(2, '0')}.svg`}
+      <Arc
+        innerRadius={innerRadius}
+        outerRadius={outerRadius}
+        start={start-correction}
+        end={end-correction}
+        LegendComponent={({...props}) => <SignIcon sign={sign} width={30} {...props} />}
       />
+      {degrees}
     </g>
   )
 }

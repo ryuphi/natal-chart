@@ -3,7 +3,14 @@ import ZodiacArc from "./ZodiacArc"
 
 const ZodiacWheel = ({radius, ascendantSign, ascendantDegrees}) => {
   const signs = [...Array(12).keys()].map(
-    value => <ZodiacArc sign={(ascendantSign+value)%12} radius={radius} start={30 * value} end={30 * (value + 1)} correction={ascendantDegrees}/>
+    value => <ZodiacArc
+      key={value}
+      sign={(ascendantSign+value)%12}
+      innerRadius={radius * .8}
+      outerRadius={radius}
+      start={30 * value}
+      end={30 * (value + 1)}
+      correction={ascendantDegrees + ascendantSign * 30}/>
   )
 
   return (
