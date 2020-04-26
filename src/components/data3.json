@@ -1,0 +1,314 @@
+{
+  "data": {
+    "astros": {
+      "sun": {
+        "name": "sun",
+        "position": {
+          "longitude": 321.40547901825823,
+          "degrees": 21,
+          "minutes": 24,
+          "seconds": 20
+        },
+        "sign": 11
+      },
+      "moon": {
+        "name": "moon",
+        "position": {
+          "longitude": 160.73656376186224,
+          "degrees": 10,
+          "minutes": 44,
+          "seconds": 12
+        },
+        "sign": 6
+      },
+      "mercury": {
+        "name": "mercury",
+        "position": {
+          "longitude": 339.5859313598568,
+          "degrees": 9,
+          "minutes": 35,
+          "seconds": 9
+        },
+        "sign": 12
+      },
+      "venus": {
+        "name": "venus",
+        "position": {
+          "longitude": 3.3598152572907116,
+          "degrees": 3,
+          "minutes": 21,
+          "seconds": 35
+        },
+        "sign": 1
+      },
+      "mars": {
+        "name": "mars",
+        "position": {
+          "longitude": 266.03084201604764,
+          "degrees": 26,
+          "minutes": 1,
+          "seconds": 51
+        },
+        "sign": 9
+      },
+      "jupiter": {
+        "name": "jupiter",
+        "position": {
+          "longitude": 285.7372676007528,
+          "degrees": 15,
+          "minutes": 44,
+          "seconds": 14
+        },
+        "sign": 10
+      },
+      "saturn": {
+        "name": "saturn",
+        "position": {
+          "longitude": 296.14289645914874,
+          "degrees": 26,
+          "minutes": 8,
+          "seconds": 34
+        },
+        "sign": 10
+      },
+      "uranus": {
+        "name": "uranus",
+        "position": {
+          "longitude": 33.05347004593346,
+          "degrees": 3,
+          "minutes": 3,
+          "seconds": 12
+        },
+        "sign": 2
+      },
+      "neptune": {
+        "name": "neptune",
+        "position": {
+          "longitude": 347.404739213991,
+          "degrees": 17,
+          "minutes": 24,
+          "seconds": 17
+        },
+        "sign": 12
+      },
+      "pluto": {
+        "name": "pluto",
+        "position": {
+          "longitude": 293.7198264216105,
+          "degrees": 23,
+          "minutes": 43,
+          "seconds": 11
+        },
+        "sign": 10
+      },
+      "chiron": {
+        "name": "chiron",
+        "position": {
+          "longitude": 2.951734372394856,
+          "degrees": 2,
+          "minutes": 57,
+          "seconds": 6
+        },
+        "sign": 1
+      },
+      "lilith": {
+        "name": "lilith",
+        "position": {
+          "longitude": 1.6118492916030451,
+          "degrees": 1,
+          "minutes": 36,
+          "seconds": 43
+        },
+        "sign": 1
+      },
+      "ceres": {
+        "name": "ceres",
+        "position": {
+          "longitude": 304.0785211486115,
+          "degrees": 4,
+          "minutes": 4,
+          "seconds": 43
+        },
+        "sign": 11
+      },
+      "vesta": {
+        "name": "vesta",
+        "position": {
+          "longitude": 47.85287402672845,
+          "degrees": 17,
+          "minutes": 51,
+          "seconds": 10
+        },
+        "sign": 2
+      },
+      "pallas": {
+        "name": "pallas",
+        "position": {
+          "longitude": 279.0009523907083,
+          "degrees": 9,
+          "minutes": 0,
+          "seconds": 3
+        },
+        "sign": 10
+      },
+      "juno": {
+        "name": "juno",
+        "position": {
+          "longitude": 201.64273488160583,
+          "degrees": 21,
+          "minutes": 38,
+          "seconds": 34
+        },
+        "sign": 7
+      }
+    },
+    "axes": {
+      "asc": {
+        "position": {
+          "degrees": 13,
+          "minutes": 43,
+          "seconds": 34,
+          "longitude": 43.72616768333869
+        },
+        "sign": 2
+      },
+      "dc": {
+        "position": {
+          "degrees": 13,
+          "minutes": 43,
+          "seconds": 34,
+          "longitude": 223.7261676833387
+        },
+        "sign": 8
+      },
+      "mc": {
+        "position": {
+          "degrees": 19,
+          "minutes": 40,
+          "seconds": 8,
+          "longitude": 319.668932813685
+        },
+        "sign": 11
+      },
+      "ic": {
+        "position": {
+          "degrees": 19,
+          "minutes": 40,
+          "seconds": 8,
+          "longitude": 499.668932813685
+        },
+        "sign": 5
+      }
+    },
+    "houses": [
+      {
+        "position": {
+          "degrees": 13,
+          "minutes": 43,
+          "seconds": 34,
+          "longitude": 43.72616768333869
+        },
+        "sign": 2
+      },
+      {
+        "position": {
+          "degrees": 13,
+          "minutes": 3,
+          "seconds": 59,
+          "longitude": 73.06640971685586
+        },
+        "sign": 3
+      },
+      {
+        "position": {
+          "degrees": 15,
+          "minutes": 29,
+          "seconds": 56,
+          "longitude": 105.49880363360793
+        },
+        "sign": 4
+      },
+      {
+        "position": {
+          "degrees": 19,
+          "minutes": 40,
+          "seconds": 8,
+          "longitude": 139.668932813685
+        },
+        "sign": 5
+      },
+      {
+        "position": {
+          "degrees": 22,
+          "minutes": 7,
+          "seconds": 29,
+          "longitude": 172.12460903502551
+        },
+        "sign": 6
+      },
+      {
+        "position": {
+          "degrees": 20,
+          "minutes": 9,
+          "seconds": 17,
+          "longitude": 200.15468780759636
+        },
+        "sign": 7
+      },
+      {
+        "position": {
+          "degrees": 13,
+          "minutes": 43,
+          "seconds": 34,
+          "longitude": 223.7261676833387
+        },
+        "sign": 8
+      },
+      {
+        "position": {
+          "degrees": 13,
+          "minutes": 3,
+          "seconds": 59,
+          "longitude": 253.06640971685584
+        },
+        "sign": 9
+      },
+      {
+        "position": {
+          "degrees": 15,
+          "minutes": 29,
+          "seconds": 56,
+          "longitude": 285.49880363360796
+        },
+        "sign": 10
+      },
+      {
+        "position": {
+          "degrees": 19,
+          "minutes": 40,
+          "seconds": 8,
+          "longitude": 319.668932813685
+        },
+        "sign": 11
+      },
+      {
+        "position": {
+          "degrees": 22,
+          "minutes": 7,
+          "seconds": 29,
+          "longitude": 352.12460903502557
+        },
+        "sign": 12
+      },
+      {
+        "position": {
+          "degrees": 20,
+          "minutes": 9,
+          "seconds": 17,
+          "longitude": 20.154687807596357
+        },
+        "sign": 1
+      }
+    ]
+  }
+}

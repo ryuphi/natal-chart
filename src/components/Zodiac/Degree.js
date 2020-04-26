@@ -23,8 +23,8 @@ const Degree = ({angle, radius, correction = 0}) => {
 
     const lineStartPoint = (angleInDegree) => {
       return {
-        x: radius * .8 * Math.cos(2 * Math.PI - ((angleInDegree - correction) * 2 * Math.PI / 360)),
-        y: radius * .8 * Math.sin(2 * Math.PI - ((angleInDegree - correction) * 2 * Math.PI / 360)),
+        x: radius * .8 * Math.cos((Math.PI/180) - ((angleInDegree-correction) * Math.PI / 180)),
+        y: radius * .8 * Math.sin((Math.PI/180) - ((angleInDegree-correction) * Math.PI / 180)),
       }
     }
 
@@ -45,12 +45,12 @@ const Degree = ({angle, radius, correction = 0}) => {
         }
       }
       return {
-        x: large * Math.cos(2 * Math.PI - ((angleInDegree - correction) * 2 * Math.PI / 360)),
-        y: large * Math.sin(2 * Math.PI - ((angleInDegree - correction) * 2 * Math.PI / 360)),
+        x: large * Math.cos((Math.PI/180) - ((angleInDegree - correction) * Math.PI / 180)),
+        y: large * Math.sin((Math.PI/180) - ((angleInDegree - correction) * Math.PI / 180)),
       }
     }
 
-    setEndPoint(lineEndPoint(angle))
+    setEndPoint(lineEndPoint( angle))
     setStartPoint(lineStartPoint(angle))
     setStroke(calculateStroke(angle))
   }, [angle, radius, correction])

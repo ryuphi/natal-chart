@@ -1,10 +1,10 @@
 import React from "react";
 
-const Axis = ({radius, startAngle, endAngle, startLegend = '', endLegend = '', bolder = false ,withArrow = false}) => {
+const Axis = ({radius, startAngle, endAngle, bolder = false ,withArrow = false}) => {
   const pointInCircle = (angleInDegree, r) => {
     return {
-      x: r * Math.cos(2 * Math.PI - angleInDegree * 2 * Math.PI / 360),
-      y: -r * Math.sin(2 * Math.PI - angleInDegree * 2 * Math.PI / 360),
+      x: r * Math.cos((270-angleInDegree) * Math.PI),
+      y: r * Math.sin((270-angleInDegree) * Math.PI),
     }
   }
 

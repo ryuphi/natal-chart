@@ -167,7 +167,8 @@
         "position": {
           "degrees": 2,
           "minutes": 32,
-          "seconds": 30
+          "seconds": 30,
+          "longitude": 272.54162517073127
         },
         "sign": 10
       },
@@ -175,7 +176,8 @@
         "position": {
           "degrees": 2,
           "minutes": 32,
-          "seconds": 30
+          "seconds": 30,
+          "longitude": 452.54162517073127
         },
         "sign": 4
       },
@@ -183,7 +185,8 @@
         "position": {
           "degrees": 14,
           "minutes": 58,
-          "seconds": 47
+          "seconds": 47,
+          "longitude": 164.97958933641414
         },
         "sign": 6
       },
@@ -191,7 +194,8 @@
         "position": {
           "degrees": 14,
           "minutes": 58,
-          "seconds": 47
+          "seconds": 47,
+          "longitude": 344.97958933641416
         },
         "sign": 12
       }
@@ -201,7 +205,8 @@
         "position": {
           "degrees": 2,
           "minutes": 32,
-          "seconds": 30
+          "seconds": 30,
+          "longitude": 272.54162517073127
         },
         "sign": 10
       },
@@ -209,7 +214,8 @@
         "position": {
           "degrees": 24,
           "minutes": 11,
-          "seconds": 43
+          "seconds": 43,
+          "longitude": 294.195391606526
         },
         "sign": 10
       },
@@ -217,7 +223,8 @@
         "position": {
           "degrees": 17,
           "minutes": 16,
-          "seconds": 24
+          "seconds": 24,
+          "longitude": 317.2732495452072
         },
         "sign": 11
       },
@@ -225,7 +232,8 @@
         "position": {
           "degrees": 14,
           "minutes": 58,
-          "seconds": 47
+          "seconds": 47,
+          "longitude": 344.97958933641416
         },
         "sign": 12
       },
@@ -233,7 +241,8 @@
         "position": {
           "degrees": 19,
           "minutes": 20,
-          "seconds": 11
+          "seconds": 11,
+          "longitude": 19.336438287138265
         },
         "sign": 1
       },
@@ -241,7 +250,8 @@
         "position": {
           "degrees": 27,
           "minutes": 30,
-          "seconds": 14
+          "seconds": 14,
+          "longitude": 57.50399628154423
         },
         "sign": 2
       },
@@ -249,7 +259,8 @@
         "position": {
           "degrees": 2,
           "minutes": 32,
-          "seconds": 30
+          "seconds": 30,
+          "longitude": 92.54162517073127
         },
         "sign": 4
       },
@@ -257,7 +268,8 @@
         "position": {
           "degrees": 24,
           "minutes": 11,
-          "seconds": 43
+          "seconds": 43,
+          "longitude": 114.19539160652602
         },
         "sign": 4
       },
@@ -265,7 +277,8 @@
         "position": {
           "degrees": 17,
           "minutes": 16,
-          "seconds": 24
+          "seconds": 24,
+          "longitude": 137.2732495452072
         },
         "sign": 5
       },
@@ -273,7 +286,8 @@
         "position": {
           "degrees": 14,
           "minutes": 58,
-          "seconds": 47
+          "seconds": 47,
+          "longitude": 164.97958933641414
         },
         "sign": 6
       },
@@ -281,7 +295,8 @@
         "position": {
           "degrees": 19,
           "minutes": 20,
-          "seconds": 11
+          "seconds": 11,
+          "longitude": 199.33643828713826
         },
         "sign": 7
       },
@@ -289,7 +304,8 @@
         "position": {
           "degrees": 27,
           "minutes": 30,
-          "seconds": 14
+          "seconds": 14,
+          "longitude": 237.50399628154426
         },
         "sign": 8
       }
