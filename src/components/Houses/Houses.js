@@ -11,7 +11,7 @@ const Houses = ({houses, ascendantDegrees, radius}) => {
   const houseArcs = twelveRange.map(
     value => {
       return (
-        <g>
+        <g key={`arc-${value}`}>
           <Arc
             house={houses[value]}
             fill={'none'}
@@ -27,7 +27,7 @@ const Houses = ({houses, ascendantDegrees, radius}) => {
     }
   )
   const cuspids = twelveRange.map(
-    index => <Cuspid radius={radius} bolder={[0,3,6,9].includes(index)} angle={(houses[index].position.longitude - ascendantDegrees)}/>
+    index => <Cuspid key={`cuspid-${index}`} radius={radius} bolder={[0,3,6,9].includes(index)} angle={(houses[index].position.longitude - ascendantDegrees)}/>
   )
 
   return (

@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React from "react"
 import ZodiacWheel from "../Zodiac/ZodiacWheel"
 import Houses from "../Houses/Houses"
 import useWindowDimensions from "../../hooks/useWindowDimensions"
@@ -12,14 +12,14 @@ const NatalChart = ({horoscope}) => {
   }
 
   const radius = (chartDimensions.width / 2) - chartDimensions.width * .20
-  console.log(horoscope)
+
   return (
     <>
       <svg width={chartDimensions.width} height={chartDimensions.height} >
         <g style={{transform: "translate(50%, 50%)"}}>
           <ZodiacWheel ascendant={horoscope.axes.asc} radius={radius} />
           <Houses houses={horoscope.houses} ascendantDegrees={horoscope.axes.asc.position.longitude} radius={radius} />
-          {Array.from(Object.values(horoscope.astros)).map(astro => <Astro name={astro.name} degrees={astro.position.longitude - horoscope.axes.asc.position.longitude} radius={radius}/>)}
+          {Array.from(Object.values(horoscope.astros)).map(astro => <Astro key={astro.name} name={astro.name} degrees={astro.position.longitude - horoscope.axes.asc.position.longitude} radius={radius}/>)}
         </g>
       </svg>
     </>

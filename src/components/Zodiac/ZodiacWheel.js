@@ -18,7 +18,7 @@ const ZodiacWheel = ({radius, ascendant}) => {
       <circle fill={'none'} strokeWidth={1} stroke={'rgba(0,0,0,.5)'} r={radius*.8}/>
       <circle fill={'none'} strokeWidth={1} stroke={'rgba(0,0,0,.5)'} r={radius}/>
       <g>
-        {[...Array(360).keys()].map(angle => <Degree angle={angle} radius={-radius} correction={ascendant.position.degrees}/>)}
+        {[...Array(360).keys()].map(angle => <Degree key={angle} angle={angle} radius={-radius} correction={ascendant.position.degrees}/>)}
       </g>
 
       {signs}
