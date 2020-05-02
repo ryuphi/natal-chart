@@ -5,7 +5,7 @@ la generación de los arcos... en el resto se
 intenta utilizar **svg** directamente.
 
 La posición de las casas y los planetas se obtienen
-de una api que cree. Pueden encontrar el código acá
+de una api que creé. Pueden encontrar el código acá
 [astrology-api](https://github.com/ryuphi/astrology-api)
 
 **Aún se encuentra en desarrollo**

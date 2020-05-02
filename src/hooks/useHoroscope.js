@@ -17,7 +17,7 @@ const useHoroscope = (date, latitude, longitude) => {
   useEffect( () => {
     const getHoroscope = async (time, position) => {
       try {
-        const response = await axios.get('https://dev-astrology-api.herokuapp.com/horoscope', {
+        const response = await axios.get(process.env.REACT_APP_API_URL, {
           params: {
             time: serializeDate(time),
             latitude: position.latitude,
